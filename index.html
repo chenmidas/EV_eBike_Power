@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Power Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="midas-logo.png" alt="Midas Logo" class="logo">
+        <h1>EV Power Selector</h1>
+        <form id="evForm">
+            <div class="form-group">
+                <label>騎乘質量 (kg):</label>
+                <input type="number" id="mass_rider" value="34">
+            </div>
+            <div class="form-group">
+                <label>車輛質量 (kg):</label>
+                <input type="number" id="mass_vehicle" value="20">
+            </div>
+            <div class="form-group">
+                <label>額定速度 (km/h):</label>
+                <input type="number" id="rated_speed" value="23.8">
+            </div>
+            <div class="form-group">
+                <label>輪胎直徑 (m):</label>
+                <input type="number" id="tire_diameter" value="0.4064">
+            </div>
+            <div class="form-group">
+                <label>加速時間 (s):</label>
+                <input type="number" id="accel_time" value="4.0">
+            </div>
+            <div class="form-group">
+                <label>鏈輪齒比:</label>
+                <input type="number" id="gear_ratio" value="1.23">
+            </div>
+            <div class="form-group">
+                <label>輪轂馬達減速比:</label>
+                <input type="number" id="hub_ratio" value="5.43">
+            </div>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
